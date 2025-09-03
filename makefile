@@ -18,12 +18,12 @@ HEADERS = isOdd.h
 
 # Build the target executable
 $(TARGET): $(OBJS)
-    $(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
 
 # Compile source files into object files
 %.o: %.c $(HEADERS)
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up build files
 clean:
-    rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(TARGET)
