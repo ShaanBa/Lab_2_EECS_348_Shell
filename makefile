@@ -8,7 +8,7 @@ CFLAGS = -Wall -Wextra -std=c99
 TARGET = main
 
 # Source files
-SRCS = main.c isOdd.c
+SRCS = main.c isOdd.c isEven.c
 
 # Object files
 OBJS = $(SRCS:.c=.o)
